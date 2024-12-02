@@ -1,10 +1,21 @@
+###> Symfony configuration ###
+# Ignore local environment configuration
+.env*
+!.env.dist
 
-###> symfony/framework-bundle ###
-/.env.local
-/.env.local.php
-/.env.*.local
-/config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
+# Ignore private keys for secrets
+/config/secrets/**/decrypt.private.php
+###< Symfony configuration ###
+
+###> Generated files ###
+# Ignore cache, logs, and temporary files
 /var/
+/public/bundles/
+
+# Ignore Composer dependencies
 /vendor/
-###< symfony/framework-bundle ###
+###< Generated files ###
+
+# Ignore IDE configurations (facultatif, si tu utilises un IDE spécifique)
+/.idea/
+/.vscode/
