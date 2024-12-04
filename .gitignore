@@ -1,10 +1,25 @@
-# Ignore les dossiers de dépendances
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
 /vendor/
-/node_modules/
+###< symfony/framework-bundle ###
 
-# Ignorer les fichiers de configuration de l'IDE (par exemple, VSCode, IntelliJ)
-.vscode/
-.idea/
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
 
-# Ignorer les fichiers temporaires de Symfony
-var/
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> symfony/asset-mapper ###
+/public/assets/
+/assets/vendor/
+###< symfony/asset-mapper ###

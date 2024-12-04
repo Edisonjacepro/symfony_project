@@ -24,3 +24,7 @@ RUN composer install
 
 # Exposer le port 9000 pour PHP-FPM
 EXPOSE 9000
+
+RUN apt-get update && apt-get install -y git \
+    && git config --global user.name "Edisonjacepro" \
+    && git config --global user.email "edison.jace.pro@gmail.com"
