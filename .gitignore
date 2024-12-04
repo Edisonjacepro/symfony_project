@@ -1,0 +1,10 @@
+# Ignore les dossiers de dépendances
+/vendor/
+/node_modules/
+
+# Ignorer les fichiers de configuration de l'IDE (par exemple, VSCode, IntelliJ)
+.vscode/
+.idea/
+
+# Ignorer les fichiers temporaires de Symfony
+var/
